@@ -7,7 +7,15 @@ const Client = new Discord.Client();
 
 Client.login(process.env.BOT_TOKEN)
 
+var Cookie = process.env.COOKIE
 
+var IdPolitie = 4349881;
+var Student = 6;
+var ChanPol = "rank-politie";
+
+function Login() {
+  return Roblox.cookieLogin(Cookie);
+}
 
 Client.on('message', (message) => {
   if (message.channel.name == ChanPol) {
