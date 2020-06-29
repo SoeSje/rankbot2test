@@ -17,14 +17,6 @@ function Login() {
   return Roblox.cookieLogin(Cookie);
 }
 
-Login() 
-  .then(function(){
-    console.log("Ingelogt")
-  })
-  .catch(function(){
-    console.log(`Login error: ${error}`)
-  })
-
 
 Client.on('message', (message) => {
   if (message.channel.name == ChanPol) {
