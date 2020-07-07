@@ -13,9 +13,11 @@ var IdPolitie = 4349881;
 var Student = 6;
 var ChanPol = "rank-politie";
 
-function Login() {
-  return Roblox.cookieLogin(Cookie);
+async function run() {
+  await noblox.setCookie(Cookie);
 }
+
+run();
 
 Client.on('message', (message) => {
   if (message.channel.name == ChanPol) {
