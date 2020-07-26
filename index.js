@@ -15,7 +15,7 @@ var ChanPol = "rank-politie";
 
 
 function Login() {
-  return Roblox.cookieLogin(Cookie);
+  return Roblox.setCookie(Cookie);
 }
 
 Client.on('message', (message) => {
